@@ -18,3 +18,9 @@ enlaces.addEventListener('click',function()
     menubar.style.transitionDelay = '0.5s';
     menubar.classList.remove('active');
  });
+
+  var container = document.querySelector('.slider');
+ var btnIzq = document.getElementById('btn-izquierda');{
+     
+ }
+ 

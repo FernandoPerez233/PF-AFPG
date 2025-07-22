@@ -17,7 +17,7 @@
 .titulos{
      font-size: 40px;
      font-weight: 800px;
-
+     
      text-align: center;
      text-transform: uppercase;
 
@@ -27,10 +27,10 @@
 .subtitulos{
      font-size: 25px;
      font-weight: 400px;
-
+     
      text-align: center;
      text-transform: uppercase;
-
+     
      color: var(--color-secundario);
 }
 
@@ -138,8 +138,8 @@
 .menu-principal i:hover{
      color: var(--color-secundario);
 }
- 
-/* SECCION DE PRODUCTOS(; */
+
+/* SECCION DE PRODUCTOS */
 #menu-productos .contenedor-principal{
      display: flex;
      align-items: center;
@@ -238,70 +238,67 @@
      transition: all 0.5s;
 }
 
-/* SECCION DE SERVICIOS */
-#servicos{
+/* SECCION SERVICIOS */
+#servicios{
      height: 100vh;
      background: white;
      padding: 40px;
 }
- .servicios-titulos
- {
+
+.servicios-titulos{
      display: flex;
      justify-content: center;
      align-items: center;
      flex-direction: column;
- }
- .servicos-container{
-     margin-top: 30px;
+}
 
+.servicios-container{
+     margin-top: 30px;
+     
      display: grid;
      grid-template-columns: repeat(3, 1fr);
      grid-template-rows: repeat(2, auto);
      grid-gap: 30px;
 
      grid-template-areas: 
-          "ingredientes      imagen         rapidez"
-          "calidad            imagen         delivery" ;
-                    
- }
- 
- .calidad{
+          "ingredientes  imagen   rapidez"
+          "calidad       imagen   delivery" ;
+
+}
+
+.calidad{
      grid-row: calidad;
      grid-column: calidad;
-     
- }
- .ingredientes{
+}
+.ingredientes{
      grid-row: ingredientes;
      grid-column: ingredientes;
-     
- }
- .rapidez{
+}
+.rapidez{
      grid-row: rapidez;
      grid-column: rapidez;
-     
- }
- .delivert{
+}
+.delivery{
      grid-row: delivery;
      grid-column: delivery;
-     
- }
- .imagen-central{
+}
+.imagen-central{
      grid-row: imagen;
      grid-column: imagen;
      transition: all 0.5s;
-     
- }
- .imagen-central:hover{
+}
+
+.imagen-central:hover{
      transform: scale(1.1);
- }
+}
 
 .items{
      display: flex;
      justify-content: center;
      align-items: center;
      flex-direction: column;
-
 }
+
 .items span{
      width: 95px;
      font-size: 40px;
@@ -318,12 +315,13 @@
 .items span:hover{
      background: var(--color-secundario);
      color: white;
-
 }
+
 .ingredientes span,
 .calidad span{
-     background: var(--color-primario);
+     color: var(--color-primario);
 }
+
 .ingredientes span:hover,
 .calidad span:hover{
      background: var(--color-primario);
@@ -337,35 +335,12 @@
      text-align: center;
 }
 
-.items .text-items{
+.items .text-item{
      font-size: 14px;
      text-align: center;
      color: var(--color-texto);
      font-style: italic;
      padding: 0 20px;
-}
-
-
-
-
-
-/* media queries */
-@media screen and(max-width:850px) {
-     /* SERVICIOS */
-
-     .servicios-container{
-          margin-top: 50px;
-          grid-template-columns: repeat(2, 1fr);
-          grid-template-areas: 
-               "ingredientes  rapidez"
-               "calidad       delivery";
-     }
-     .imagen-central{
-          display: none;
-
-
-     }
-     
 }
 
 /* SECCION DE EQUIPO */
@@ -464,6 +439,30 @@
 
 
 
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 850px) {
+
+     /* SECCCION SERVICIOS*/
+     .servicios-container{
+          margin-top: 50px;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-areas:
+               "ingredientes  rapidez"
+               "calidad       delivery";
+     }
+
+     .imagen-central{
+          display: none;
+     }
+}
+
+
+
+
+
 @media screen and (max-width: 650px) {
 
      /* MENU PRINCIPAL */
@@ -517,10 +516,17 @@
      .menu-bar .sociales a{
           font-size: 20px;
      }
+ 
 }
+ /* SLIDER PRODUCTOS */
 
-/* SECCION DE INGREDIENTES*/
-/* INGRDIENTES */
+ var container = document.querySelector('.slider')
+ var btnIzq = document.getElementById(''){
+
+ }
+ 
+
+ /* INGRDIENTES */
  #ingredientes {
   display: flex;
   justify-content: center;
@@ -659,4 +665,5 @@
 .inputConIcon input:focus, 
 .inputConIcon textarea:focus{
      border: 1px solid var(--color-primario);
+
 }
